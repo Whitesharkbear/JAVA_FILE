@@ -1,17 +1,17 @@
-package chapter2;
+package finalex;
 
 public class Constant {
 	
+	int num = 10;
+	final int NUM = 100; 
+
 	public static void main(String[] args) {
+
+		Constant cons = new Constant();
+		cons.num = 50;
+		//cons.NUM = 200;
 		
-		final int MAX_NUM = 100;
-		final int MIN_NUM;
-		
-		MIN_NUM = 0;
-		
-		System.out.println(MAX_NUM);
-		System.out.println(MIN_NUM);
-		
-		//MAX_NUM = 1000;          //¿¡·¯ ³²
+		System.out.println(cons.num);
+		System.out.println(cons.NUM);
 	}
 }
